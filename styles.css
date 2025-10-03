@@ -1,1 +1,25 @@
 /*  your css code here. If applicable */
+h1 {
+	text-align: center;
+}
+
+.form-group {
+	display:flex;
+	flex-direction: column;
+}
+input, button {
+	padding: 10px 20px;
+	border-radius: 6px;
+	border: 1px solid black;
+	margin: 10px 0px;
+}
+
+button {
+	background-color: blue;
+	width: 25%;
+	border: none;	
+}
+table {
+	width: 95vw;
+	border: 1px solid black;
+}
