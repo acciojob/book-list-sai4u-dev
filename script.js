@@ -12,7 +12,7 @@ function tableData() {
 		<td>${title.value}</td>
 		<td>${author.value}</td>
 		<td>${isbn.value}</td>
-		<td><button class="clearRow">❌</button></td>
+		<td><button class="delete">❌</button></td>
 	`;
 
 	// Append row only if any input is filled
@@ -28,7 +28,7 @@ function tableData() {
 
 // Event delegation for delete buttons
 bookList.addEventListener("click", function(e) {
-	if (e.target && e.target.classList.contains("clearRow")) {
+	if (e.target && e.target.classList.contains("delete")) {
 		e.target.closest("tr").remove(); // remove the row
 	}
 });
